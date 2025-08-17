@@ -1,0 +1,129 @@
+<html>
+
+<body>
+    <div width=100% style="padding:20px;">
+        <br/>
+        <br/>
+        <h2 style="text-align:center;">{businessName}</h2>
+        <div style="text-align:center;">Application Status: {status}</div>
+        <br/>
+        <br/> Dear Servepoint Support,
+        <br/>
+        <br/> Please find the business name registration application details below:<br/>
+        <br/>
+        <br/>
+        <table>
+            <tr>
+                <td>Offline Mode:</td>
+                <td>{isOfflineMode}</td>
+            </tr>
+            <tr>
+                <td>Registration Term:</td>
+                <td>{term} (Commencing on the day application status becomes successful)</td>
+            </tr>
+            <tr>
+                <td>Payment Transaction No:</td>
+                <td>{paymentNum}</td>
+            </tr>
+            <tr>
+                <td>Payment Status:</td>
+                <td>{paymentStatus}</td>
+            </tr>
+            <tr>
+                <td>Payment SessionId:</td>
+                <td>{paymentSessionId}</td>
+            </tr>
+            <tr>
+                <td>Payment Date:</td>
+                <td>{orderDateTime}</td>
+            </tr>
+            <tr>
+                <td>Amount Paid:</td>
+                <td>${paymentTotalFormatted}</td>
+            </tr>
+            <tr>
+                <td>ABN No:</td>
+                <td>{abnNum}</td>
+            </tr>
+            <tr>
+                <td>ABN Lodgement No:</td>
+                <td>{abnTransactionNum}</td>
+            </tr>
+            <tr>
+                <td>Message Reference Number:</td>
+                <td>Please contact Aim Independence support for more details</td>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+        <h3>Order Summary:</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>NO</th>
+                <th>ITEM</th>
+                <th>PRICE</th>
+            </tr>
+            </thead>
+            <tbody>
+            {orderSummary}
+            </tbody>
+        </table>
+        <br/>
+        <br/>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td>{clientName}</td>
+            </tr>
+            <tr>
+                <td>Contact No:</td>
+                <td>{clientPhone}</td>
+            </tr>
+            <tr>
+                <td>Contact Email:</td>
+                <td>{clientEmail}</td>
+            </tr>
+            <tr>
+                <td>Contact Address:</td>
+                <td><pre>{clientAddress}</pre></td>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+        <br/>
+        <h3>ABN Application:</h3>
+        <pre>{abnAppln}</pre><br/>
+        <br/>
+        <br/>
+        <h3>ABN Application Result:</h3>
+        {abnTransactionStatus}<br/>
+        {abnRegResult}<br/>
+        <br/>
+        <br/>
+        <h3>Business Name Registration Application:</h3>
+        <pre>{bNameRegAppln}</pre><br/>
+        <br/>
+        <br/>
+        <h3>Business Name Registration Application Result:</h3>
+        {businessNameRegTransactionStatus}<br/> {businessNameRegTransactionMessage}
+        <br/> {businessNameRegTransactionASICDescription}
+        <br/>
+        <br/>
+        <h3>Business Name Renewal Application:</h3>
+        <pre>{bNameRenAppln}</pre><br/>
+        <br/>
+        <br/>
+        <h3>Business Name Renewal Application Result:</h3>
+        {businessNameRenTransactionStatus}<br/> {businessNameRenTransactionMessage}
+        <br/> {businessNameRenTransactionASICDescription}
+        <br/>
+        <br/>
+        <br/> &copy; ServePoint Pty Ltd
+        <br/> Level 3, 55 Pyrmont Bridge Road, Pyrmont NSW 2009
+        <br/>
+        <br/>
+    </div>
+</body>
+
+</html>
